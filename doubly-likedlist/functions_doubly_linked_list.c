@@ -65,6 +65,7 @@ void DoublyLinkedList_copy(DoublyLinkedList *dest, const DoublyLinkedList *src)
 		else
 		{
 			prev_node->next = new_node;
+			new_node->prev = prev_node;
 		}
 		dest->size++;
 		prev_node = new_node;
